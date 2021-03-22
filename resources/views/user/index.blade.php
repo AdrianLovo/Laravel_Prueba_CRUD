@@ -1,11 +1,11 @@
 @extends('layouts.plantillabase')
 
-@section('contenido')    
+@section('contenido')   
 
     <div class="container">
-        <a href="users/create" class="btn btn-primary mt-3">CREAR USUARIO</a>
+        <a href="users/create" class="btn btn-primary mt-3" style="margin-bottom:20px">CREAR USUARIO</a>
 
-        <table class="table table-bordered" style="margin-top:20px">
+        <table id="usuarios" class="table table-striped" style="width:100%">
             <thead>
                 <tr>
                     <th scope="col">Id</th>
@@ -34,7 +34,15 @@
         </tbody>
         </table>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#usuarios').DataTable();
+        });
+
+    </script>
+
    
-
-
 @endsection

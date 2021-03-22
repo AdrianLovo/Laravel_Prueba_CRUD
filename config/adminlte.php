@@ -292,6 +292,28 @@ return [
     */
 
     'plugins' => [
+
+        'DTable' => [
+            'active' => true,
+            'files' => [
+                [
+                    'type' => 'css',
+                    'asset' => true,
+                    'location' => 'https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css',
+                ],
+                [
+                    'type' => 'js',
+                    'asset' => true,
+                    'location' => 'https://code.jquery.com/jquery-3.5.1.js',
+                ],
+                [
+                    'type' => 'js',
+                    'asset' => true,
+                    'location' => 'https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js',
+                ]           
+            ],
+        ],
+
         'Datatables' => [
             'active' => false,
             'files' => [
