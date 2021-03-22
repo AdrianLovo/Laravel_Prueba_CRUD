@@ -5,7 +5,7 @@
     <div class="container">
         <a href="users/create" class="btn btn-primary mt-3">CREAR USUARIO</a>
 
-        <table class="table table-dark table-striped mt-4">
+        <table class="table table-bordered" style="margin-top:20px">
             <thead>
                 <tr>
                     <th scope="col">Id</th>
